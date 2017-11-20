@@ -1,0 +1,11 @@
+<table class="table table-bordered">
+  <tr>
+  <td><%= @list.title %></td>
+  </tr>
+  <tr><td><%= @list.date %></td></tr>
+  <tr><td><%= simple_format(@list.description) %></td></tr>
+</table>
+
+
+
+<%= link_to 'Back to index', lists_path, class: 'btn btn-primary' %>
